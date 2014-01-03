@@ -39,16 +39,6 @@ tinymce.PluginManager.add('mathslate', function(editor,url) {
 					win.close();
                                         }
 				},
-				{text: "Undo", 
-                                 onclick: function() {
-                                        mathEditor.undo();
-                                    }
-				},
-				{text: "Redo", 
-                                 onclick: function() {
-                                        mathEditor.redo();
-                                    }
-				},
 				{text: "Cancel", onclick: function() {
 					win.close();
                                         }
