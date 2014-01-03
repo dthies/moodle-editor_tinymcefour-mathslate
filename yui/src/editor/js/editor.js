@@ -36,7 +36,7 @@ M.tinymcefour_mathslate.initEditor=function(params){
 function Editor(editorID,config){
         var me=new M.local_mathslate.Editor('#'+editorID,config);
         var popup = top.tinymce.activeEditor.windowManager.getParams();
-        popup.getMath=function (format) {return mje.output(format);};
+        popup.getMath=function (format) {return me.output(format);};
         popup.undo=function () {me.undo();};
         popup.redo=function () {me.redo();};
     }
